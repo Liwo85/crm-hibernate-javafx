@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sda.crm.controller.HomeController">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRM SYSTEM" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Button layoutX="34.0" layoutY="319.0" mnemonicParsing="false" onAction="#displayPersonRegistration" text="Osoba Fizyczna" />
+      <Button layoutX="167.0" layoutY="319.0" mnemonicParsing="false" onAction="#displayCompanyRegistration" prefHeight="25.0" prefWidth="63.0" text="Firma" />
+      <Text layoutX="34.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formularz Rejestracyjny">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="34.0" layoutY="216.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" text="Przeglądaj bazę" />
+      <Text layoutX="257.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" textAlignment="CENTER" wrappingWidth="86.185546875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

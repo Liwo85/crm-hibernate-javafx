@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sda.crm.controller.CompanyListController">
+   <children>
+      <Text layoutX="23.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRM SYSTEM" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <Text layoutX="18.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DODAJ KLIENTA FIRMOWEGO" />
+      <Text layoutX="20.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAZWA FIRMY" wrappingWidth="93.232421875" />
+      <Text layoutX="20.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIP" wrappingWidth="93.23242187499977" />
+      <Text layoutX="20.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ULICA" wrappingWidth="93.23242187499977" />
+      <Text layoutX="20.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIASTO" wrappingWidth="93.23242187499977" />
+      <Text layoutX="299.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KOD POCZTOWY" wrappingWidth="93.232421875" />
+      <Text layoutX="20.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KRAJ" wrappingWidth="93.23242187499977" />
+      <TextField fx:id="companyName" layoutX="122.0" layoutY="172.0" AnchorPane.leftAnchor="122.0" AnchorPane.topAnchor="172.0" />
+      <TextField fx:id="nipNumber" layoutX="122.0" layoutY="212.0" AnchorPane.leftAnchor="122.0" />
+      <TextField fx:id="street" layoutX="122.0" layoutY="252.0" />
+      <TextField fx:id="city" layoutX="122.0" layoutY="292.0" />
+      <ComboBox fx:id="country" layoutX="123.0" layoutY="332.0" prefHeight="25.0" prefWidth="149.0" promptText="Wybierz...">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TextField fx:id="zipCode" layoutX="422.0" layoutY="332.0" />
+      <Button layoutX="237.0" layoutY="409.0" mnemonicParsing="false" onAction="#onCompanySave" prefHeight="38.0" prefWidth="167.0" text="DODAJ KLIENTA" />
+      <Button layoutX="393.0" layoutY="15.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="27.0" prefWidth="188.0" text="POWRÓT DO MENU" />
+      <Text layoutX="20.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID UTWORZONEGO KLIENTA:" />
+      <Text fx:id="customerId" layoutX="195.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="301.0" />
+      <Text fx:id="errorMessageCompany" fill="#f80000" layoutX="422.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="199.7294921875" />
+      <Button layoutX="587.0" layoutY="14.0" minWidth="39.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="27.0" prefWidth="39.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <graphic>
+            <ImageView accessibleRole="PARENT" fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons-Home-Icon-Home-icons--137png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
